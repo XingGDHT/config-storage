@@ -1,0 +1,28 @@
+{
+	"name": "config-storage",
+	"main": "src/index.ts",
+	"compatibility_date": "2024-10-20",
+	"observability": {
+		"enabled": true
+	},
+	"kv_namespaces": [
+		{
+			"binding": "STORAGE",
+			"id": "a18addb8a82346dbb91b21a3dfbfb719",
+			"preview_id": "YOUR_KV_PREVIEW_NAMESPACE_ID"
+		}
+	],
+	"env": {
+		"production": {
+			"kv_namespaces": [
+				{
+					"binding": "STORAGE",
+					"id": "YOUR_KV_NAMESPACE_ID"
+				}
+			]
+		}
+	},
+	"vars": {
+		"SECRET": "your-secret-key-here"
+	}
+}
